@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Home from "./components/home";
 import Nav from "./components/nav";
+import Map from "./components/map";
 import NotFound from "./common/notFound";
 import "./App.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -14,6 +15,7 @@ class Router extends Component {
         <div className="container" style={{ marginTop: 25 }}>
           <Switch>
             <Route path="/home" component={Home} />
+            <Route path="/map" component={Map} />
             <Route path="/not-found" component={NotFound} />
             <Redirect from="/" exact to="/home" />
             <Redirect to="/not-found" />

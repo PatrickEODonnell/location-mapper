@@ -5,6 +5,9 @@ const Nav = () => {
       <a className="navbar-brand" href="#">
         Litter Location Mapper
       </a>
+      <a className="navbar-item" href="#">
+        Report
+      </a>
     </nav>
   );
 };
